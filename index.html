@@ -20,6 +20,7 @@
     <link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
 
     <!-- reference to our geojson file locations here -->
+    <script src="toronto-all-rail-line.js" type="text/javascript"></script>
     <script src="toronto-rh-line.js" type="text/javascript"></script>
     <script src="toronto-rh-stops.js" type="text/javascript"></script>
 
@@ -65,8 +66,9 @@
 	map.addLayer(mapboxTiles);
 
 
+  L.geoJSON(torontoAllLines).addTo(map);  // note position to underlay others
   L.geoJSON(torontoRHLine).addTo(map);
-  L.geoJSON(torontoRHStops).addTo(map);
+  L.geoJSON(torontoRHStops).addTo(map); 
 
 	</script>
 
