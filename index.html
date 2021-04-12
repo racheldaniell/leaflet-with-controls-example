@@ -24,6 +24,7 @@
     <script src="toronto-rh-line.js" type="text/javascript"></script>
     <script src="toronto-crosstown-line.js" type="text/javascript"></script>
     <script src="toronto-rh-stops.js" type="text/javascript"></script>
+    <script src="toronto-crosstown-stops.js" type="text/javascript"></script>
 
 
     <style>
@@ -70,7 +71,8 @@
   L.geoJSON(torontoAllLines).addTo(map);  // note position to underlay others
   L.geoJSON(torontoRHLine).addTo(map); 
   L.geoJSON(torontoCrossLine).addTo(map); 
-  L.geoJSON(torontoRHStops).addTo(map); 
+  L.geoJSON(torontoRHStops).addTo(map);   
+  L.geoJSON(torontoCrossStops).addTo(map);
 
 	</script>
 
